@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title My site -#{title}
+        block styles 
+            link(rel='stylesheet', href='../css/bootstrap.min.css')
+        body
+            block header 
+                nav(class="navbar navbar-dark bg-dark")
+                    a(class="navbar-brand" href="/users") Users View
+                    a(class="navbar-item" href="/users/usersList") Users List
+                    a(class="navbar-item" href="/users/permissions") Permissions
+            block content
+                h1 #{message}
+            block foot 
